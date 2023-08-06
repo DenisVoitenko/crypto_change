@@ -1,20 +1,136 @@
 body {
+    background: url(../images/background/Rectangle.png) 0px 0px/100% 100% no-repeat;
     margin: 0px;
     padding: 0px;
-}
-
-.header_h1 {
-    
+    color: rgba(230, 234, 242, 1);
 }
 
 .red {
     border: 2px solid red;
 }
 
-.btn_submitFormChang { 
-    
+/* ===================START_Header=============== */
+
+.btn_personal_area {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  background: none;
+  color: rgba(72, 121, 218, 1);
 }
 
+/* ===================END_Header============= */
+
+/* ====================START_Container_Form_Change====================== */
+
+.header_h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 62px;
+    font-weight: 800;
+    background: linear-gradient(rgba(200, 217, 251, 1),
+    rgba(129, 159, 220, 1),
+    rgba(37, 103, 234, 1),
+    rgba(214, 67, 227, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===========BTN_SUBMITFORMCHANGE=========== */
+
+.btn_submitFormChange {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn_submitFormChange:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+  
+  .btn_submitFormChange:active {
+    transform: scale(0.97);
+  }
+  
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hoverEffect div {
+    background: rgb(222,0,75);
+    background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
+    border-radius: 40rem;
+    width: 100%;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+  
+  .btn_submitFormChange:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+  
+    80% {
+      transform: rotate(340deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* ===========END_BTN_SUBMITFORMCHANGE======== */
+
+/* ===========END_Container_Form_Change====================== */
+
+/* ===========START_Container_Currency_Reserved============== */
+/* ===========END_Container_Currnecy_Reserved================= */
+
+/* ===========START_Container_Courses_Currency=============== */
+
+/* ===========END_Container_Coures_Curerency================= */
+
+/* ===========START_Container_Manual================= */
+/* ===========END_Container_Manual================ */
+
+/* ===========START_Container_Footer========== */
+
+.container_footer {
+  background-color: rgba(72, 121, 218, 0.2);
+}
+
+.link_footer {
+  text-decoration: none;
+  color: rgba(230, 234, 242, 1);
+}
+
+
+/* ===========END_Container_Footer=========== */
 .green_background {
     background-color: rgba(0, 255, 0, 0.541);
 }
@@ -42,9 +158,4 @@ body {
 .footer_ul {
     list-style-type: none;
     list-style-position: inside;
-}
-
-.link_footer {
-    text-decoration: none;
-    color: black;
 }
