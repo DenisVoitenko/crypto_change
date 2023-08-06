@@ -3,6 +3,48 @@ body {
     padding: 0px;
 }
 
+.header_h1 {
+    
+}
+
 .red {
     border: 2px solid red;
+}
+
+.btn_submitFormChang { 
+    
+}
+
+.green_background {
+    background-color: rgba(0, 255, 0, 0.541);
+}
+
+.red_background{
+    background-color: #FF2121;
+}
+
+.block_manual {
+
+}
+
+.button_support {
+    padding: 25px 28px 25px 24px;
+    background-color: #4879DA;
+    border-radius: 20px;
+    text-decoration: none;
+    color: wheat;
+}
+
+.footer_header_text {
+    color: #6A8FDA;
+}
+
+.footer_ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.link_footer {
+    text-decoration: none;
+    color: black;
 }
